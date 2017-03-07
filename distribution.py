@@ -37,7 +37,7 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 
-letter=input("Please enter a string of text (the bigger the better): ")
+letter=str(input("Please enter a string of text (the bigger the better): "))
 print("The distribution of characters in \"" +letter+ "\". is:")
 
 print((letter).count('a'))
@@ -66,3 +66,7 @@ print((letter).count('w'))
 print((letter).count('x'))
 print((letter).count('y'))
 print((letter).count('z'))
+
+for x in letter:
+    if letter.count('a')>letter.count('b'):
+        print(letter)
