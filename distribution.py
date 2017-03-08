@@ -36,12 +36,25 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
+alphabet=list(string.ascii_lowercase)
 
 letter=input("Please enter a string of text (the bigger the better): ")
 print("The distribution of characters in \"" +letter+ "\". is:")
+
 letter=letter.lower()
 letter=list(letter)
 
+k=0
+while(k<len(letter)):
+    if(letter[k] in alphabet):
+        letter[k]=letter[k]
+    else:
+        letter[k]=-1
+    k+=1
+print(letter)
+
+"""
 ((letter).count('a'))
 ((letter).count('b'))
 ((letter).count('c'))
@@ -73,6 +86,8 @@ letter=list(letter)
 
 for x in letter:
     if letter==" ":
-        replace(
+        del(' ')
     if letter==".":
         del('.')
+    print(letter)
+"""
