@@ -36,10 +36,11 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-import string
 
 letter=input("Please enter a string of text (the bigger the better): ")
 print("The distribution of characters in \"" +letter+ "\". is:")
+letter=letter.lower()
+letter=list(letter)
 
 ((letter).count('a'))
 ((letter).count('b'))
@@ -69,6 +70,9 @@ print("The distribution of characters in \"" +letter+ "\". is:")
 ((letter).count('z'))
 
 
+
 for x in letter:
-    if letter.count('a')>letter.count('b'):
-        print(letter.sort())
+    if letter==" ":
+        replace(
+    if letter==".":
+        del('.')
