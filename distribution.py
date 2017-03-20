@@ -47,7 +47,7 @@ letter=letter.lower()
 letter=list(letter)
 
 for a in letter:
-     geronimo = wsgd.count(a)
+     geronimo = letter.count(a)
      sat = ''
      if geronimo != 0:
          for y in range(geronimo):
