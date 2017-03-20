@@ -44,7 +44,6 @@ letter=input("Please enter a string of text (the bigger the better): ")
 print("The distribution of characters in \"" +letter+ "\". is:")
 
 letter=letter.lower()
-letter=list(letter)
 
 for a in letter:
      geronimo = letter.count(a)
@@ -53,8 +52,6 @@ for a in letter:
          for y in range(geronimo):
              sat = sat + (a)
          letter.append(sat)
-        
- 
  
 for i in range(26):
      start = 0
