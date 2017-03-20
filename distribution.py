@@ -46,22 +46,24 @@ print("The distribution of characters in \"" +letter+ "\". is:")
 letter=letter.lower()
 letter=list(letter)
 
-k=0
-while(k<len(letter)):
-    if(letter[k] in alphabet):
-        letter[k]=letter[k]
-    else:
-        letter[k]=-1
-    k+=1
-
-k=0
-a=int(alphabet.index(letter[0]))
-while(k<len(letter)):
-    if letter[k]==-1:
-        k=k
-    elif(a<=alphabet.index(letter[k])):
-        a=a
-    else:
-        a=letter[k]
-    k+=1
-print(alphabet(a))
+for a in alph:
+     geronimo = wsgd.count(a)
+     sat = ''
+     if geronimo != 0:
+         for y in range(geronimo):
+             sat = sat + (a)
+         meow.append(sat)
+        
+ 
+ 
+for i in range(26):
+     jum = 0
+     while jum < len(meow)-1:
+         if len(meow[jum]) < len(meow[jum+1]):
+             wad = meow[jum]
+             meow[jum] = meow[jum+1]
+             meow[jum+1] = wad
+         jum += 1
+             
+for c in meow:
+     print (c)
