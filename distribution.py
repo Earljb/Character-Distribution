@@ -38,7 +38,6 @@ Notice about this example:
 """
 import string
 alphabet=list(string.ascii_lowercase)
-number=['0','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25']
 
 letter=input("Please enter a string of text (the bigger the better): ")
 print("The distribution of characters in \"" +letter+ "\". is:")
@@ -46,7 +45,7 @@ print("The distribution of characters in \"" +letter+ "\". is:")
 letter=letter.lower()
 space=[]
 
-for a in letter:
+for a in alphabet:
      geronimo = letter.count(a)
      sat = ''
      if geronimo != 0:
