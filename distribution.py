@@ -37,7 +37,7 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
-alphabet=list(string.ascii_lowercase)
+alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
 
 letter=input("Please enter a string of text (the bigger the better): ")
 print("The distribution of characters in \"" +letter+ "\". is:")
@@ -46,21 +46,19 @@ letter=letter.lower()
 space=[]
 
 for a in alphabet:
-     geronimo = letter.count(a)
-     sat = ''
-     if geronimo != 0:
-         for y in range(geronimo):
-             sat = sat + (a)
-         space.append(sat)
- 
-for i in range(26):
-     start = 0
-     while start < len(space)-1:
-         if len(space[start]) < len(space[start+1]):
-             wad = space[start]
-             space[start] = space[start+1]
-             space[start+1] = wad
-         start += 1
-             
-for c in letter:
-     print (c)
+     earl = letter.count(a)
+     if not earl == 0:
+        space.append(a*earl)
+
+
+for b in range(26):
+    it = 0
+    while it < len(space)-1:
+        if len(space[it]) < len(space[it+1]):
+            lit = space[it]
+            space[it]= space[it+1]
+            space[it+1] = lit
+        it +=1
+
+for c in space:
+    print(c)
