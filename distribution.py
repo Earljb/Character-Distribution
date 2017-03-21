@@ -40,7 +40,7 @@ import string
 alphabet=('a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
 
 letter=input("Please enter a string of text (the bigger the better): ")
-print("The distribution of characters in \"" +letter+ "\". is:")
+print("The distribution of characters in \"" +letter+ "\" is:")
 
 letter=letter.lower()
 space=[]
